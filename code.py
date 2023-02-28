@@ -3,7 +3,8 @@ import requests
 import sys
 
 import json
-                
+  
+#oh also regardless I need to make a date var
 place = "London"
 response = requests.request("GET", f"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{place}/2023-02-28/2023-02-28?unitGroup=us&elements=name%2Ctemp%2Cprecip%2Cwindspeed%2Cpressure%2Csunrise%2Cicon&include=current&key=E6NN76EW4SM8X265MB757RJAU&contentType=json")
 if response.status_code!=200:
